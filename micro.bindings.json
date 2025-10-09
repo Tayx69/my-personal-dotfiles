@@ -1,0 +1,45 @@
+{
+  // === File Management ===
+  "Ctrl-s": "Save",
+  "Ctrl-Shift-s": "SaveAll",
+  "Ctrl-o": "Open",
+  "Ctrl-w": "Quit",
+  "Ctrl-q": "Quit",
+
+  // === Editing ===
+  "Ctrl-z": "Undo",
+  "Ctrl-Shift-z": "Redo",
+  "Ctrl-x": "Cut",
+  "Ctrl-c": "Copy",
+  "Ctrl-v": "Paste",
+  "Ctrl-a": "SelectAll",
+  "Ctrl-f": "Find",
+  "Ctrl-h": "Replace",
+  "Ctrl-l": "SelectLine",
+
+  // === Navigation ===
+  "Ctrl-g": "GotoLine",
+  "Alt-Up": "MoveLinesUp",
+  "Alt-Down": "MoveLinesDown",
+  "Ctrl-Home": "StartOfFile",
+  "Ctrl-End": "EndOfFile",
+  "Ctrl-Right": "WordRight",
+  "Ctrl-Left": "WordLeft",
+
+  // === Tabs / Buffers ===
+  "Ctrl-Tab": "NextTab",
+  "Ctrl-Shift-Tab": "PreviousTab",
+  "Ctrl-n": "NewTab",
+  "Ctrl-Shift-w": "CloseTab",
+
+  // === Search ===
+  "Ctrl-f": "Find",
+  "Ctrl-Shift-f": "FindNext",
+  "Ctrl-Shift-h": "FindPrevious",
+
+  // === Commenting (custom plugin usually needed) ===
+  "Ctrl-/": "ToggleComment",
+
+  // === Terminal-style ===
+  "Ctrl-Shift-p": "CommandMode"
+}
