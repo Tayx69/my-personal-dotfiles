@@ -1,0 +1,62 @@
+import Quickshell
+import QtQuick
+import "components/core"
+import "components/state"
+import "components/windows"
+import "services"
+import "widgets/statusbar"
+
+ShellRoot {
+    Component.onCompleted: {
+        IdleService.available;
+    }
+
+    Binding {
+        target: NetworkService
+        property: "scanningRequested"
+        value: OverlayState.utilityCenterVisible
+            && OverlayState.utilityPage === "wifi"
+    }
+
+    Binding {
+        target: BluetoothService
+        property: "scanningRequested"
+        value: OverlayState.utilityCenterVisible
+            && OverlayState.utilityPage === "bluetooth"
+    }
+
+    Variants {
+        model: Quickshell.screens
+
+        LockTransitionOverlay {}
+    }
+
+    LockScreen {}
+
+    Variants {
+        model: Quickshell.screens
+
+        WallpaperLayer {}
+    }
+
+    SettingsWindow {}
+
+    Variants {
+        model: Quickshell.screens
+
+        ScreenOverlay {}
+    }
+
+    Variants {
+        model: Quickshell.screens
+
+        StatusBar {}
+    }
+
+    Variants {
+        model: Quickshell.screens
+
+        ScreenMask {}
+    }
+
+}
